@@ -1,0 +1,121 @@
+<htmL>
+<body>
+    <hr>
+    <b><u>Artikelgegevens</b></u><br>
+    Artikelnaam: <span id="a_naam"></span><br>
+    Gewicht: <span id="a_gewicht"></span> gram<br>
+    Kiloprijs: € <span id="a_kiloPrijs"></span><br>
+    Verkoopprijs: € <span id="a_verkoopPrijs"></span><br>
+    <hr>
+    <b><u>Artikelgegevens</b></u><br>
+    Artikelnaam: <span id="a2_naam"></span><br>
+    Gewicht: <span id="a2_gewicht"></span> gram<br>
+    Kiloprijs: € <span id="a2_kiloPrijs"></span><br>
+    Verkoopprijs: € <span id="a2_verkoopPrijs"></span><br>
+    <hr>
+    <b><u>Artikelgegevens</b></u><br>
+    Artikelnaam: <span id="a3_naam"></span><br>
+    Gewicht: <span id="a3_gewicht"></span> gram<br>
+    Kiloprijs: € <span id="a3_kiloPrijs"></span><br>
+    Verkoopprijs: € <span id="a3_verkoopPrijs"></span><br>
+    <hr>
+    <b><u>Artikelgegevens</b></u><br>
+    Artikelnaam: <span id="a4_naam"></span><br>
+    Stuksprijs: € <span id="a4_stuksPrijs"></span><br>
+    <hr>
+    <b><u>Artikelgegevens</b></u><br>
+    Artikelnaam: <span id="a5_naam"></span><br>
+    Stuksprijs: € <span id="a5_stuksPrijs"></span><br>
+</body>
+<script>
+    class Artikel {
+        constructor(naam, gewichtGR, kiloPrijs, verkoopPrijs) {
+            this.naam = naam;
+            this.gewichtGR = gewichtGR;
+            this.kiloPrijs = kiloPrijs;
+            this.verkoopPrijs = verkoopPrijs;
+        }
+    }
+
+    class Artikel2 {
+        constructor(naam, stukPrijs) {
+            this.naam = naam;
+            this.stuksPrijs = stuksPrijs;
+        }
+    }
+
+    var visRollade = new Artikel("visrollade", "0.535", "27.50", "14.71");
+    var boterVis = new Artikel("botervis", "0.225", "29.50", "6.64");
+    var kibbeling = new Artikel("kibbeling", "0.500", "17.50", "8.75");
+    var visKoekjes = new Artikel2("viskoekjes", "1.25");
+    var ravigottaSaus = new Artikel2("ravigottasaus", "0.60")
+
+    a_naam.innerhtml = visRollade.naam;
+    a_gewicht.innerhmtl = visRollade.gewichtGR;
+    a_kiloPrijs.innerhmtl = visRollade.kiloPrijs;
+    a_verkoopPrijs.innerhmtl = visRollade.verkoopPrijs;
+
+    a2_naam.innerhtml = boterVis.naam;
+    a2_gewicht.innerhmtl = boterVis.gewichtGR;
+    a2_kiloPrijs.innerhmtl = boterVis.kiloPrijs;
+    a2_verkoopPrijs.innerhmtl = boterVis.verkoopPrijs;
+
+    a3_naam.innerhtml = kibbeling.naam;
+    a3_gewicht.innerhmtl = kibbeling.gewichtGR;
+    a3_kiloPrijs.innerhmtl = kibbeling.kiloPrijs;
+    a3_verkoopPrijs.innerhmtl = kibbeling.verkoopPrijs;
+
+    a4_naam.innerhtml = visKoekjes.naam;
+    a4_stuksPrijs.innerhmtl = visKoekjes.stuksPrijs;
+
+    a5_naam.innerhtml = ravigottaSaus.naam;
+    a5_stuksPrijs.innerhmtl = ravigottaSaus.stuksPrijs;
+
+//var artikel1, artikel2, artikel3, artikel4, artikel5;
+
+//artikel1 = "visrollade";
+//artikel2 = "botervis";
+//artikel3 = "kibbeling 500gr 1 stuks";
+//artikel4 = "viskoekjes";
+//artikel5 = "bakje ravigottasaus";
+
+//var gewicht1, gewicht2, gewicht3;
+
+//gewicht1 = 0.535;
+//gewicht2 = 0.225;
+//gewicht3 = 1;
+
+//var aantal;
+//aantal = 3;
+
+//var prijs1, prijs2, prijs3, prijs4, prijs5;
+
+//prijs1 = 27.50;
+//prijs2 = 29.50;
+//prijs3 = 8.75;
+//prijs4 = 1.25;
+//prijs5 = 0.60;
+
+//var korting;
+//korting = 0.08;
+
+//var totprijs1, totprijs2, totprijs3, totprijs4, totprijs5, totprijs6;
+
+//totprijs1 = prijs1*gewicht1;
+//totprijs2 = prijs2*gewicht2;
+//totprijs3 = prijs3*gewicht3;
+//totprijs4 = prijs4*aantal;
+//totprijs5 = prijs5*aantal;
+//totprijs6 = aantal*2*korting;
+
+//console.log(artikel1 + " " + gewicht1 + " GR X € " + prijs1.toFixed(2) + " = € " + totprijs1.toFixed(2));
+//console.log(artikel2 + " " + gewicht2 + " GR X € " + prijs2.toFixed(2) + " = € " + totprijs2.toFixed(2));
+//console.log(artikel3 + " " + " X € " + prijs3.toFixed(2) + " = € " + totprijs3.toFixed(2));
+//console.log(artikel4 + " " + aantal + " stuks X € " + prijs4.toFixed(2) + " = € " + totprijs4.toFixed(2));
+//console.log(artikel5 + " " + aantal + " stuks X € " + prijs5.toFixed(2) + " = € " + totprijs5.toFixed(2));
+//console.log("uw voordeel per 3 stuks: € " + totprijs6);
+//console.log("Totaal: € " + (totprijs1+totprijs2+totprijs3+totprijs4+totprijs5-totprijs6).toFixed(2));
+</script>
+
+
+</htmL>

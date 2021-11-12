@@ -1,0 +1,16 @@
+<html>
+
+<script>
+    function vraagTemp(temp) {
+        var temp = prompt("Wat is de temperatuur op dit moment?");
+
+        if (temp >= 10 && temp <= 20) {
+            return alert("Gemiddelde temperatuur. Namelijk " + temp + " graden celcius");
+        } else if (temp <= 0 || temp >= 30) {
+            return alert("Extreme temperatuur! Namelijk" + temp + "graden celsius");
+        }
+    }
+    vraagTemp();
+</script>
+
+</html>
